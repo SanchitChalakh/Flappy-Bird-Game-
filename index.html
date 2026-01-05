@@ -9,6 +9,15 @@
 
 <canvas id="game" width="360" height="640"></canvas>
 
+<script>
+/* Full screen on first tap */
+document.addEventListener("touchstart", () => {
+  if (document.documentElement.requestFullscreen) {
+    document.documentElement.requestFullscreen();
+  }
+}, { once: true });
+</script>
+
 <script src="game.js"></script>
 </body>
 </html>
